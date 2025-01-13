@@ -1,0 +1,400 @@
+/* Custom styles */
+.navbar {
+    background-color: #ffeb3b !important;
+    padding: 1rem 2rem;
+}
+
+.navbar-brand img {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+}
+
+.support-btn {
+    background-color: #ff4444;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.support-btn:hover {
+    background-color: #ff6666;
+    color: white;
+}
+
+/* Center navbar items */
+.navbar-nav {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.nav-item {
+    padding: 0 1rem;
+}
+
+/* Slideshow styles */
+
+
+/* Hide scrollbar but keep functionality */
+body {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+/* Fullscreen hero section */
+.hero-section {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* Carousel styling */
+.carousel {
+    height: 100%;
+}
+
+.carousel-inner, .carousel-item {
+    height: 100%;
+}
+
+.carousel-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Gradient overlay */
+.gradient-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50%;  /* Adjust height of gradient */
+    background: linear-gradient(
+        to bottom,
+        rgba(255, 140, 0, 0) 0%,
+        rgba(255, 140, 0, 0.4) 40%,
+        rgba(255, 140, 0, 0.7) 100%
+    );
+    z-index: 2;
+}
+
+/* Slide content styling */
+.slide-content {
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    color: white;
+    text-align: left;
+    padding: 0 20px;
+}
+
+.slide-content h2 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: left;
+    padding-left: 10%;
+}
+
+.slide-content p {
+    font-size: 1.2rem;
+    max-width: 80%;
+    margin: 0 auto;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Additional content section */
+.additional-content {
+    min-height: 100vh;
+    padding: 4rem 2rem;
+    background: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .slide-content h2 {
+        font-size: 2.5rem;
+    }
+
+    .slide-content p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .slide-content h2 {
+        font-size: 2rem;
+    }
+}
+
+/**program section**/
+
+.program-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.programs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.program-card {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.program-image {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+}
+
+.program-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.program-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 2;
+    width: 100%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.program-content {
+    padding: 1.5rem;
+    background: white;
+}
+
+.program-content p {
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.know-more {
+    color: #e74c3c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.know-more:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .programs-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .program-image {
+        height: 300px;
+    }
+}
+
+/** sdg **/
+
+.sdg-section {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 2rem 1rem;
+}
+
+.sdg-section h1 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.sdg-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #fdf6e3;
+    padding: 5%;
+    gap: 1rem;
+}
+
+.sdg-square {
+    background-color: #f0f0f0;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    color: #555;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive design */
+@media (min-width: 768px) {
+    .sdg-section h1 {
+        font-size: 2rem;
+    }
+    .sdg-square {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+
+
+
+/**footer**/
+
+.custom-footer {
+    background-color: #800020; /* Deep maroon */
+    color: #ffffff;
+    padding: 3rem 0;
+    font-family: Arial, sans-serif;
+}
+
+.newsletter-section {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.newsletter-section h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-weight: 300;
+}
+
+.newsletter-form {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    color: #ffffff;
+    padding: 0.5rem;
+    width: 300px;
+    margin: 0 1rem;
+}
+
+.form-input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.form-input:focus {
+    outline: none;
+    border-bottom-color: #FFD700;
+}
+
+.subscribe-btn {
+    background-color: #FFD700;
+    color: #000000;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.subscribe-btn:hover {
+    background-color: #FFC800;
+}
+
+.social-links {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.social-links a {
+    color: #ffffff;
+    margin: 0 1rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.social-links .dot {
+    color: #FFD700;
+    margin: 0 0.5rem;
+}
+
+.footer-links {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 0.9rem;
+}
+
+.footer-links .dot {
+    color: #FFD700;
+    margin: 0 0.5rem;
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-bottom a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+}
+
+.footer-bottom span {
+    margin: 0 1rem;
+}
+
+@media (max-width: 768px) {
+    .newsletter-form {
+        flex-direction: column;
+        padding: 0 1rem;
+    }
+
+    .form-input {
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    .footer-links, .social-links {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+}
