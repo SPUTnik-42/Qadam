@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Layout</title>
+  <style>
+
+.headlines {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.headlines h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.colored-section {
+  background-color: #fff3d4;
+  padding: 40px 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.image-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.image-placeholder {
+  flex: 1;
+  min-width: 150px;
+  max-width: 200px;
+  aspect-ratio: 1;
+  background-color: #ddd;
+  border: 2px dashed #bbb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.white-space {
+  height: 20px;
+  background-color: #ffffff;
+}
+
+  </style>
+</head>
+<body>
+  <div class="headlines">
+    <h1>Towards Achieving</h1>
+    <h1>Sustainable Development Goals</h1>
+  </div>
+  <section class="colored-section">
+    <div class="image-grid">
+      <div class="image-placeholder"></div>
+      <div class="image-placeholder"></div>
+      <div class="image-placeholder"></div>
+      <div class="image-placeholder"></div>
+    </div>
+  </section>
+  <div class="white-space"></div>
+</body>
+</html>

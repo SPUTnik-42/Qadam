@@ -1,9 +1,4 @@
 #rectangle-header {
-    position: absolute;
-    width: 100vw;
-    height: 139px;
-    left: 0px;
-    top: 0px;
     background: linear-gradient(180deg, #FFB200 0%, #FFCF00 100%);
 }
 

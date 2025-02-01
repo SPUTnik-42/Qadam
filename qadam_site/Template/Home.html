@@ -1,104 +1,74 @@
 {% extends "base.html" %}
 {% load static %}
 {% block main %}
-  <main>
+    <main>
 
-    <!-- Slideshow -->
-    <section class="hero-section">
-        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src={% static './Images/UpperImage.svg' %} alt="Slide 1">
-                    <div class="gradient-overlay"></div>
-                    <div class="slide-content">
-                        <h2>TOWARDS PAINLESS STEPS</h2>
-                        <p>Every step a child takes should be filled with comfort and dignity. At Qadam, we believe that a pair of shoes is more than just footwear – it's a gateway to education, play, and childhood joy. Since 2018, we've provided over 100,000 pairs of quality shoes to children in need across 15 countries. Our community-based approach ensures that each donation directly reaches the children who need it most. Through partnerships with local schools and organizations, we're walking towards a future where no child has to go barefoot.
-                        </p>
+        <div class="upperimagecontainer">
+            <img src={% static './Images/UpperImagewave.png' %} alt="Section Image" class="section-image">
+        </div>
+        <div class="bottom-div">
+            <h1>Towards Painless Steps</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
+            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt 
+            in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            </p>
+        </div>
+
+        <div class="programcontainer">
+            <div class="heading"><h1>OUR PROGRAMS</h1></div>
+            <div class="programs">
+                <!-- Program 1 -->
+                <div class="program-card">
+                    <div class="program-image">
+                        <img src={% static './Images/Card1.svg' %} alt="Awareness and Education">
+                        <div class="program-title">Awareness and Education</div>
+                    </div>
+                    <div class="program-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel nunc et metus tempus pretium ut ac erat.</p>
+                        <a href="#">Know More ></a>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <img src={% static './Images/UpperImage.svg' %} alt="Slide 2">
-                    <div class="gradient-overlay"></div>
-                    <div class="slide-content">
-                        <h2>TOWARDS PAINLESS STEPS</h2>
-                        <p>Every step a child takes should be filled with comfort and dignity. At Qadam, we believe that a pair of shoes is more than just footwear – it's a gateway to education, play, and childhood joy. Since 2018, we've provided over 100,000 pairs of quality shoes to children in need across 15 countries. Our community-based approach ensures that each donation directly reaches the children who need it most. Through partnerships with local schools and organizations, we're walking towards a future where no child has to go barefoot.
-                        </p>
+    
+                <!-- Program 2 -->
+                <div class="program-card">
+                    <div class="program-image">
+                        <img src={% static './Images/Card2.svg' %} alt="Collection">
+                        <div class="program-title">Collection</div>
+                    </div>
+                    <div class="program-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel nunc et metus tempus pretium ut ac erat.</p>
+                        <a href="#">Know More ></a>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <img src={% static './Images/UpperImage.svg' %} alt="Slide 3">
-                    <div class="gradient-overlay"></div>
-                    <div class="slide-content">
-                        <h2>TOWARDS PAINLESS STEPS</h2>
-                        <p>Every step a child takes should be filled with comfort and dignity. At Qadam, we believe that a pair of shoes is more than just footwear – it's a gateway to education, play, and childhood joy. Since 2018, we've provided over 100,000 pairs of quality shoes to children in need across 15 countries. Our community-based approach ensures that each donation directly reaches the children who need it most. Through partnerships with local schools and organizations, we're walking towards a future where no child has to go barefoot.
-                        </p>
+    
+                <!-- Program 3 -->
+                <div class="program-card">
+                    <div class="program-image">
+                        <img src={% static './Images/Card3.svg' %} alt="Donation">
+                        <div class="program-title">Donation</div>
+                    </div>
+                    <div class="program-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel nunc et metus tempus pretium ut ac erat.</p>
+                        <a href="#">Know More ></a>
                     </div>
                 </div>
             </div>
-            
-            <!-- Carousel Controls -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
         </div>
-    </section>
 
+        <div class="headlines">
+            <h1>Towards Achieving</h1>
+            <h1>Sustainable Development Goals</h1>
+        </div>
+        <section class="colored-section">
+            <div class="image-grid">
+              <div class="image-placeholder"></div>
+              <div class="image-placeholder"></div>
+              <div class="image-placeholder"></div>
+              <div class="image-placeholder"></div>
+            </div>
+        </section>
+        <div class="white-space"></div>
 
-    <div class="program-container">
-      <h1 style='margin-bottom: 3%;'>Our Programs</h1>
-      <div class="programs-grid">
-          <div class="program-card">
-              <div class="program-image">
-                  <img src={% static './Images/UpperImage.svg' %} alt="Awareness and Education">
-                  <h2 class="program-title">Awareness<br>and<br>Education</h2>
-              </div>
-              <div class="program-content">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel nunc et metus tempus pretium ut ae erat. Phasellus finibus maximus quam. Donec pellentesque egestas leo in convallis. Donec id metus est. Nullam lobortis arcu sed tincidunt pulvinar.</p>
-                  <a href="#" class="know-more">Know More </a>
-              </div>
-          </div>
-
-          <div class="program-card">
-              <div class="program-image">
-                  <img src={% static './Images/UpperImage.svg' %} alt="Collection">
-                  <h2 class="program-title">Collection</h2>
-              </div>
-              <div class="program-content">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel nunc et metus tempus pretium ut ae erat. Phasellus finibus maximus quam. Donec pellentesque egestas leo in convallis. Donec id metus est. Nullam lobortis arcu sed tincidunt pulvinar.</p>
-                  <a href="#" class="know-more">Know More </a>
-              </div>
-          </div>
-
-          <div class="program-card">
-              <div class="program-image">
-                  <img src={% static './Images/UpperImage.svg' %} alt="Donation">
-                  <h2 class="program-title">Donation</h2>
-              </div>
-              <div class="program-content">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel nunc et metus tempus pretium ut ae erat. Phasellus finibus maximus quam. Donec pellentesque egestas leo in convallis. Donec id metus est. Nullam lobortis arcu sed tincidunt pulvinar.</p>
-                  <a href="#" class="know-more">Know More </a>
-              </div>
-          </div>
-      </div>
-    </div>
-
-    <section class="sdg-section">
-      <h1>TOWARDS ACHIEVING SUSTAINABLE DEVELOPMENT GOALS</h1>
-      <div class="sdg-row">
-        <div class="sdg-square">1</div>
-        <div class="sdg-square">2</div>
-        <div class="sdg-square">3</div>
-        <div class="sdg-square">4</div>
-        <div class="sdg-square">5</div>
-        <div class="sdg-square">6</div>
-      </div>
-    </section>
-
-  </main>
-
+    </main>
 {% endblock main %}   

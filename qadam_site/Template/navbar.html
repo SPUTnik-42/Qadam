@@ -1,29 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sustainable Development Goals Section</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Section with SVG</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+        }
 
+        .upperimagecontainer {
+            position: relative;
+        }
+          
+        .upperimagecontainer img {
+            width: 100%;
+        }
+          
+        .upperimagecontainer svg {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .bottom-div {
+            position: absolute;
+            top: 72%;
+            left: 0;     
+            background-color: orange;
+            color: white;
+            padding: 20px;
+            text-align: left;
+        }
+        .bottom-div h1 {
+            font-family: 'Bebas Neue';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 35px;
+            line-height: 58px;
 
-  </style>
+            color: #000000;
+        }
+        .bottom-div p {
+            font-family: 'Karma';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 26px;        
+            color: #000000;
+        }
+    </style>
 </head>
 <body>
-  <section class="sdg-section">
-    <h1>TOWARDS ACHIEVING SUSTAINABLE DEVELOPMENT GOALS</h1>
-    <div class="sdg-row">
-      <div class="sdg-square">1</div>
-      <div class="sdg-square">2</div>
-      <div class="sdg-square">3</div>
-      <div class="sdg-square">4</div>
-      <div class="sdg-square">5</div>
-      <div class="sdg-square">6</div>
+    <div class="upperimagecontainer">
+        <img src="../Static/Images/UpperImage.svg" alt="Section Image" class="section-image">
+        <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 390" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><path d="M 0,400 L 0,75 C 75.94258373205744,91.29665071770336 151.8851674641149,107.5933014354067 266,100 C 380.1148325358851,92.4066985645933 532.401913875598,60.92344497607656 625,59 C 717.598086124402,57.07655502392344 750.5071770334929,84.71291866028707 826,98 C 901.4928229665071,111.28708133971293 1019.5693779904307,110.22488038277513 1129,104 C 1238.4306220095693,97.77511961722487 1339.2153110047848,86.38755980861244 1440,75 L 1440,400 L 0,400 Z" stroke="none" stroke-width="0" fill="#ffa500" fill-opacity="0.4" class="transition-all duration-300 ease-in-out delay-150 path-0"></path><path d="M 0,400 L 0,175 C 130.21052631578945,183.54545454545456 260.4210526315789,192.0909090909091 337,184 C 413.5789473684211,175.9090909090909 436.52631578947376,151.18181818181816 526,140 C 615.4736842105262,128.81818181818184 771.4736842105264,131.1818181818182 882,142 C 992.5263157894736,152.8181818181818 1057.578947368421,172.0909090909091 1143,179 C 1228.421052631579,185.9090909090909 1334.2105263157896,180.45454545454544 1440,175 L 1440,400 L 0,400 Z" stroke="none" stroke-width="0" fill="#ffa500" fill-opacity="0.53" class="transition-all duration-300 ease-in-out delay-150 path-1"></path><path d="M 0,400 L 0,275 C 84.93779904306217,273.2775119617225 169.87559808612434,271.555023923445 262,263 C 354.12440191387566,254.44497607655504 453.43540669856463,239.05741626794259 545,239 C 636.5645933014354,238.94258373205741 720.3827751196172,254.21531100478472 814,272 C 907.6172248803828,289.7846889952153 1011.0334928229665,310.08133971291863 1117,311 C 1222.9665071770335,311.91866028708137 1331.4832535885166,293.4593301435407 1440,275 L 1440,400 L 0,400 Z" stroke="none" stroke-width="0" fill="#ffa500" fill-opacity="1" class="transition-all duration-300 ease-in-out delay-150 path-2"></path></svg>
+        <div class="bottom-div">
+            <h1>Towards Painless Steps</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
+            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt 
+            in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            </p>
+        </div>
     </div>
-  </section>
+    
 </body>
 </html>
