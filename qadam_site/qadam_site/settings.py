@@ -125,7 +125,7 @@ STATIC_URL = 'Static/'
 
 STATICFILES_DIRS = [os.path.join(BASE_DIR / "Static")]
 
-STATIC_ROOT = STATICFILES_DIRS
+STATIC_ROOT = STATIC_URL  #research and then change
 
 MEDIA_URL = 'Media/'
 
