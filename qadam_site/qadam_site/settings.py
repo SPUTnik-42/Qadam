@@ -121,13 +121,13 @@ USE_TZ = True
 
 
 
-STATIC_URL = 'Static/'
+STATIC_URL = '/Static/'
 
 STATICFILES_DIRS = [os.path.join(BASE_DIR / "Static")]
 
-STATIC_ROOT = STATIC_URL  #research and then change
+STATIC_ROOT = STATICFILES_DIRS #research and then change
 
-MEDIA_URL = 'Media/'
+MEDIA_URL = '/Media/'
 
 MEDIA_ROOT = [os.path.join(BASE_DIR / "Media")]
 
