@@ -21,12 +21,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-t5%j0958e36a#90=f%)+wnb$wwk0dipl1#7*cngon=xm6i^9w4'
+SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.environ.get("DEBUG","False").lower() == "true"
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = os.environ.get("ALLOWED_HOSTS").split(" ")
 
 
 # Application definition
@@ -81,10 +81,10 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+database_url = os.environ.get("DATABASE_URL")
+DATABASES['default'] = dj_database_url.parse(database_url)
 
-DATABASES['default'] = dj_database_url.parse("postgresql://qadam_user:eQNj2YulJXnBVeyxfItW0yCol6oPKEfW@dpg-cuhpv9d2ng1s738apd60-a.singapore-postgres.render.com/qadam")
 
-#postgresql://qadam_user:eQNj2YulJXnBVeyxfItW0yCol6oPKEfW@dpg-cuhpv9d2ng1s738apd60-a.singapore-postgres.render.com/qadam
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
 
