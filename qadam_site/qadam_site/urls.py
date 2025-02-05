@@ -23,7 +23,7 @@ from website.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',HomeView),
-    path('/About',AboutView),
+    path('about/',AboutView),
 ] 
 if settings.DEBUG:
     urlpatterns+= static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
