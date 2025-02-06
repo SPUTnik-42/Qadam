@@ -1,0 +1,185 @@
+/* Apply Bebas Neue for headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+/* Apply Karma for body text (lorem or paragraph text) */
+p,
+.text-container,
+.lorem-text {
+    font-family: 'Karma', serif;
+}
+
+/* For the first container (first .light-pink section) */
+.light-pink:nth-of-type(1) {
+    background: rgba(244, 0, 0, 0.15);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* For the second container (second .dark-pink section) */
+.dark-pink:nth-of-type(2) {
+    background: rgba(244, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* For the third container (third .light-pink section) */
+.light-pink:nth-of-type(3) {
+    background: rgba(244, 0, 0, 0.35);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding-top: 40px;
+    /* Add padding-top */
+    padding-bottom: 40px;
+    /* Add padding-bottom */
+}
+
+/* For the fourth container (fourth .dark-pink section) */
+.dark-pink:nth-of-type(4) {
+    background: rgba(244, 0, 0, 0.45);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.image-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1.5rem;
+    /* Reduced padding */
+    height: 100%;
+}
+
+/* Adjustments for larger screens */
+@media (min-width: 768px) {
+    .image-container {
+        justify-content: flex-start;
+    }
+
+    .text-container {
+        padding: 2rem 2.5rem;
+        /* Reduced padding for larger screens */
+    }
+}
+
+/* Override for second and fourth sections */
+.dark-pink .image-container {
+    justify-content: flex-end;
+}
+
+.light-pink .image-container {
+    justify-content: flex-start;
+}
+
+/* Ensure images take full height of the container for iPads */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .image-container {
+        height: 100%;
+        display: flex;
+        align-items: stretch;
+    }
+
+    .image-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .text-container {
+        padding: 0.2rem 0.5rem;
+        /* Extremely reduced padding for iPads */
+    }
+}
+
+/* here */
+.hero-section {
+    position: relative;
+    height: 60vh;
+    /* Reduced from 100vh to 80vh for better proportion */
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    /* Centers the image */
+    filter: grayscale(100%);
+    transform: scale(1.0);
+    /* Ensures no default scaling */
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 1;
+}
+
+.hero-text {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+}
+
+.our-story {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.our-story h2 {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+.our-story p {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Mobile-specific centering for the 3rd container's image */
+@media (max-width: 767px) {
+    .light-pink:nth-of-type(3) .image-container {
+        justify-content: center !important;
+        display: flex;
+        align-items: center;
+        padding: 0; /* Ensure no extra padding */
+    }
+
+    .light-pink:nth-of-type(3) .image-container img {
+        max-width: 100%; /* Make sure it doesn’t exceed container width */
+        max-height: 300px; /* Adjust height to prevent excess */
+        height: auto; /* Maintain aspect ratio */
+        object-fit: contain; /* Ensure no cropping */
+    }
+
+    /* Reduce extra spacing in the 3rd container on mobile */
+    .light-pink:nth-of-type(3) {
+        padding-top: 20px !important;
+        padding-bottom:10px !important;
+    }
+}

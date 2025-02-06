@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block head %}
+    <link rel="stylesheet" href={% static 'AboutUs.css' %}>
+{% endblock head %}
+
+{% block main %}
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <img src={% static './Images/AboutUs_Image1.svg' %} alt="Hero Image" class="hero-image">
+            <div class="hero-text">
+                <h1>Random Words for Inspiration</h1>
+            </div>
+        </section>
+
+        <!-- Our Story Section -->
+        <section class="our-story">
+            <h2>Our Story</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel nunc et metus tempus pretium ut ac erat. Phasellus finibus maximus quam. Donec pellentesque egestas leo in convallis. Donec id metus est. Nullam lobortis arcu sed tincidunt pulvinar. Fusce a sapien sapien. Praesent ut dignissim sapien. Aliquam condimentum purus non vestibulum bibendum. Praesent nec facilisis urna, sit amet ornare massa. Cras lacinia enim orci, quis convallis felis mattis pulvinar. Pellentesque fringilla quis ligula eget molestie.</p>
+        </section>
+        <div class="container-fluid light-pink d-flex align-items-stretch">
+            <div class="row align-items-center h-100">
+                <div class="col-md-6 image-container">
+                    <img src={% static './Images/AboutUs_Image2.svg'%} alt="Child 1">
+                </div>
+                <div class="col-md-6 text-container">
+                    <h2>Our Mission</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel nunc et metus tempus pretium ut ac erat. Phasellus finibus maximus quam. Donec pellentesque egestas leo in convallis. Donec id metus est. Nullam lobortis arcu sed tincidunt pulvinar. Fusce a sapien sapien. Praesent ut dignissim sapien. Aliquam condimentum purus non vestibulum bibendum. Praesent nec facilisis urna, sit amet ornare massa.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid dark-pink d-flex align-items-stretch">
+            <div class="row align-items-center h-100 flex-row-reverse">
+                <div class="col-md-6 image-container">
+                    <img src={% static './Images/AboutUs_Image2.svg'%} alt="Child 2">
+                </div>
+                <div class="col-md-6 text-container">
+                    <h2>Our Vision</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel nunc et metus tempus pretium ut ac erat. Phasellus finibus maximus quam. Donec pellentesque egestas leo in convallis. Donec id metus est. Nullam lobortis arcu sed tincidunt pulvinar. Fusce a sapien sapien. Praesent ut dignissim sapien. Aliquam condimentum purus non vestibulum bibendum. Praesent nec facilisis urna, sit amet ornare massa.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid light-pink d-flex align-items-stretch">
+            <div class="row align-items-center h-100">
+                <div class="col-md-6 image-container">
+                    <img src={% static './Images/AboutUs_workcycle.svg'%} alt="Child 3">
+                </div>
+                <div class="col-md-6 text-container">
+                    <h2>How We Work</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel nunc et metus tempus pretium ut ac erat. Phasellus finibus maximus quam. Donec pellentesque egestas leo in convallis. Donec id metus est. Nullam lobortis arcu sed tincidunt pulvinar. Fusce a sapien sapien. Praesent ut dignissim sapien. Aliquam condimentum purus non vestibulum bibendum. Praesent nec facilisis urna, sit amet ornare massa.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid dark-pink d-flex align-items-stretch">
+            <div class="row align-items-center h-100 flex-row-reverse">
+                <div class="col-md-6 image-container">
+                    <img src={% static './Images/AboutUs_Image2.svg'%} alt="Child 4">
+                </div>
+                <div class="col-md-6 text-container">
+                    <h2>Why Trust Us?</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel nunc et metus tempus pretium ut ac erat. Phasellus finibus maximus quam. Donec pellentesque egestas leo in convallis. Donec id metus est. Nullam lobortis arcu sed tincidunt pulvinar. Fusce a sapien sapien. Praesent ut dignissim sapien. Aliquam condimentum purus non vestibulum bibendum. Praesent nec facililis urna, sit amet ornare massa.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+{% endblock main %}   

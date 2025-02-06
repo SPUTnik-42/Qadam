@@ -6,7 +6,7 @@ def HomeView(request):
     return render(request,'Home.html')
 
 def AboutView(request):
-    pass
+    return render(request,'AboutUs.html')
 
 
 
