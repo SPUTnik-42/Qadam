@@ -1,0 +1,508 @@
+.images-section {
+    margin-bottom: 60px;
+}
+
+.images-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.images-item {
+    position: relative;
+    width: 100%;
+    height: 33.33vh;
+    min-height: 200px;
+    overflow: hidden;
+}
+
+.images-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.images-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.images-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.content-container {
+    padding: 0 50px;
+}
+
+.intro-section {
+    margin-bottom: 80px;
+    /* Increased gap after lorem text */
+}
+
+.info-box {
+    background-color: #FFBFE4;
+    padding: 15px;
+    border-radius: 10px;
+    height: 90px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left: 80px;
+    /* Increased left margin to move boxes right */
+}
+
+.info-box.collection {
+    background-color: #F6BFFF;
+}
+
+.info-box.donation {
+    background-color: #D1BFFF;
+}
+
+.box-title {
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-size: 1.8rem;
+    margin: 0;
+    color: #000000;
+    white-space: pre-line;
+}
+
+.quote {
+    min-height: 50px;
+    /* Adjust based on longest quote */
+    display: flex;
+    align-items: center;
+    /* Ensures vertical centering */
+    justify-content: center;
+    /* Ensures text is centered inside */
+    font-family: 'Karma';
+    font-style: normal;
+    color: #000000;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    margin-left: 80px;
+    text-align: center;
+    /* New properties for text wrapping */
+    word-wrap: break-word;
+    /* Allow long words to break */
+    overflow-wrap: break-word;
+    /* Alternative property for word breaking */
+    white-space: normal;
+    /* Allow text to wrap */
+    max-width: 250px;
+    /* Ensure it doesn't exceed container width */
+    line-height: 1.5;
+    /* Improved readability for wrapped text */
+}
+
+.section-content {
+    margin-bottom: 40px;
+    font-family: 'Bebas Neue';
+    color: #000000;
+    position: relative;
+    padding: 0 20px;
+    /* Added padding for consistent alignment */
+}
+
+
+.section-heading {
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+    position: relative;
+    padding-left: 45px;
+    /* Increased padding for consistent bullet alignment */
+    margin-left: 55px;
+    /* Increased margin for better alignment */
+}
+
+.section-heading::before {
+    content: "•";
+    position: absolute;
+    left: 20px;
+    /* Adjusted position of bullet */
+    color: #000000;
+}
+
+.section-text {
+    font-family: 'Karma';
+    font-weight: normal;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    margin-left: 100px;
+    /* Aligned with heading text */
+}
+
+.quote {
+    font-family: 'Karma';
+    font-style: normal;
+    color: #000000;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    margin-left: 80px;
+    /* Match info-box margin */
+    text-align: left;
+}
+
+.vertical-divider {
+    position: absolute;
+    right: 0;
+    top: 45px;
+    bottom: 0;
+    width: 1px;
+    background-color: #000000;
+    height: calc(100% - 45px);
+}
+
+.horizontal-divider {
+    display: none;
+    height: 1px;
+    background-color: #000000;
+    width: 80%;
+    margin: 30px auto;
+    /* Centered alignment */
+}
+
+.main-title {
+    text-align: left;
+    margin-bottom: 20px;
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 400;
+    margin-left: 20px;
+}
+
+.intro-text {
+    text-align: left;
+    margin-bottom: 40px;
+    color: #000000;
+    font-family: 'Karma';
+    font-style: normal;
+    font-weight: 400;
+    margin-left: 60px;
+}
+
+.row {
+    margin: 0 -30px;
+    /* Increased negative margin for more space between columns */
+}
+
+.col-md-4 {
+    padding: 0 30px;
+    /* Increased padding for more space between columns */
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    .info-box {
+        width: 200px;
+        /* Slightly smaller width for iPad */
+        margin-left: 20px;
+
+    }
+
+    .quote {
+        margin-left: 20px;
+        max-width: calc(100% - 40px);
+    }
+}
+
+.col-md-4 {
+    padding: 0 15px;
+}
+
+.row {
+    margin: 0 -15px;
+}
+
+
+/* iPad Air/Pro */
+@media only screen and (min-width: 820px) and (max-width: 1180px) {
+    .info-box {
+        width: 220px;
+        margin-left: 30px;
+    }
+
+    .quote {
+        margin-left: 30px;
+        max-width: calc(100% - 60px);
+    }
+}
+
+/* Original mobile styles remain the same */
+@media (max-width: 768px) {
+    .images-item {
+        height: 25vh;
+        min-height: 150px;
+    }
+
+    .images-text {
+        font-size: 1.8rem;
+    }
+
+    .section-content {
+        margin-bottom: 30px;
+    }
+
+    .vertical-divider {
+        display: none;
+    }
+
+    .horizontal-divider {
+        display: block;
+    }
+
+    .info-box {
+        width: 100%;
+        margin-left: 0;
+
+    }
+
+    .content-container {
+        /* padding: 0 5px; */
+        padding-left: 0%;
+    }
+
+    .section-heading,
+    .section-text,
+    .quote {
+        margin-left: 0;
+
+
+    }
+
+    .section-heading {
+        padding-left: 25px;
+        margin-left: 0;
+    }
+
+    .section-text {
+        margin-left: 25px;
+    }
+
+    .quote {
+        margin-left: 0;
+        text-align: center;
+        max-width: 100%;
+        padding: 0 20px;
+
+    }
+}
+
+/* Adjust vertical divider for iPad Mini */
+@media only screen and (min-width: 768px) and (max-width: 834px) {
+    .vertical-divider {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 1px;
+        background-color: #000000;
+        height: 100%;
+    }
+
+    .horizontal-divider {
+        display: none;
+        /* Hide unintended horizontal lines */
+    }
+}
+
+/* Ensure bullets align properly */
+.section-heading {
+    position: relative;
+    padding-left: 35px;
+    /* Adjusted for better alignment */
+    margin-left: 0;
+}
+
+.section-heading::before {
+    content: "\2022";
+    position: absolute;
+    left: 0;
+    font-size: 1.8rem;
+    color: #000000;
+}
+
+.section-text {
+    margin-left: 35px;
+    /* Align text with heading */
+}
+
+@media (max-width: 768px) {
+    .section-heading {
+        padding-left: 25px;
+    }
+
+    .section-heading::before {
+        left: 5px;
+    }
+
+    .section-text {
+        margin-left: 25px;
+    }
+}
+
+/* Awareness and Education Column */
+.col-12.col-md-4:nth-child(1) .section-content {
+    position: relative;
+}
+
+.col-12.col-md-4:nth-child(1) .info-box {
+    margin-left: 0px;
+    position: relative;
+    left: 46.8%;
+    transform: translateX(-50%);
+    width: 250px;
+}
+
+.col-12.col-md-4:nth-child(1) .quote {
+    margin-left: 0px;
+    width: 250px;
+    position: relative;
+    left: 46.8%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+/* Collection Column (already provided in your previous code) */
+.col-12.col-md-4:nth-child(2) .section-content {
+    position: relative;
+}
+
+.col-12.col-md-4:nth-child(2) .info-box.collection {
+    margin-left: 0px;
+    position: relative;
+    left: 46.8%;
+    transform: translateX(-50%);
+    width: 250px;
+}
+
+.col-12.col-md-4:nth-child(2) .quote {
+    margin-left: 0px;
+    width: 250px;
+    position: relative;
+    left: 46.8%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+/* Donation Column */
+.col-12.col-md-4:nth-child(3) .section-content {
+    position: relative;
+}
+
+.col-12.col-md-4:nth-child(3) .info-box.donation {
+    margin-left: 0px;
+    position: relative;
+    left: 46.8%;
+    transform: translateX(-50%);
+    width: 250px;
+}
+
+.col-12.col-md-4:nth-child(3) .quote {
+    margin-left: 0px;
+    width: 250px;
+    position: relative;
+    left: 46.8%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+/* First, let's create a class to handle the tallest section */
+.section-content {
+    position: relative;
+    height: 100%;
+    /* Allow the section to expand */
+}
+
+/* Make the container establish a reference height */
+.row {
+    display: flex;
+    align-items: stretch;
+    /* Stretch columns to match tallest */
+}
+
+/* Ensure columns expand to match tallest */
+.col-12.col-md-4 {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Update vertical divider styles */
+.vertical-divider {
+    position: absolute;
+    right: 0;
+    top: 45px;
+    bottom: 0;
+    width: 1px;
+    background-color: #000000;
+    height: calc(100% - 45px);
+    /* Start from after the info box */
+}
+
+/* Ensure content sections fill available space */
+.col-12.col-md-4 .section-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 768px) {
+    .vertical-divider {
+        display: none;
+    }
+
+    .section-content {
+        position: relative;
+        left: 7.5%;
+        margin-bottom: 1px;
+    }
+
+    .horizontal-divider {
+        position: relative;
+        left: 4.5%;
+        margin-top: 10px;
+    }
+    .images-item {
+        display: block; /* Ensure block display */
+        float: left; /* Remove potential extra whitespace  */
+        width: 100%; /* Ensure full width  */
+        margin-bottom: -1px; /* Micro adjustment for spacing */
+    }
+
+     .images-item img {
+       display: block; /* Ensure images are block-level */
+       width: 100%;
+       height: 100%; /* Allow height to adjust proportionally */
+    }
+
+    .images-container {
+        font-size: 0; /* Remove potential text-related spacing */
+        line-height: 0; /*Remove potential line height spacing*/
+    }
+}
+
+.white-space {
+    height: 120px;
+    background-color: #ffffff;
+}

@@ -1,0 +1,308 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.hero-section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+    filter: grayscale(1);
+}
+
+.gradient-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 75%;
+    background: url('../CSS/Images/Gradient.svg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 2rem;
+}
+
+.content {
+    color: #ffffff;
+    max-width: 900px;
+}
+
+h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 4rem;
+    line-height: 1;
+    margin-bottom: 1.5rem;
+}
+
+p {
+    font-family: 'Karma', serif;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .gradient-overlay {
+        height: 70%;
+        padding: 1.5rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .gradient-overlay {
+        height: 80%;
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+}
+
+.section-title {
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 5rem;
+    font-size: 3rem;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-lg-4 {
+    display: flex;
+}
+
+.program-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    background: white;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+}
+
+.program-card:hover {
+    transform: scale(1.05);
+}
+
+.program-card:hover .image-title {
+    color: #FFA322;
+}
+
+.image-container {
+    position: relative;
+    padding-top: 100%;
+    overflow: hidden;
+}
+
+.program-card img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.image-title {
+    position: absolute;
+    bottom: 40px;
+    left: 30px;
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.5rem;
+    line-height: 1;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    z-index: 2;
+    transition: color 0.3s ease;
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.4)); */
+    z-index: 1;
+}
+
+.card-content {
+    padding: 25px;
+    background: white;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-text {
+    font-family: 'Karma', serif;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 15px;
+    flex-grow: 1;
+}
+
+.know-more {
+    font-family: 'Karma', serif;
+    color: #BF100D;
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-block;
+    margin-top: auto;
+    transition: color 0.3s ease;
+}
+
+.know-more:hover {
+    color: #FFA322;
+}
+
+.know-more::after {
+    content: " →";
+}
+/* Reset any previous hover states */
+.program-card:hover .image-title {
+    color: inherit;
+}
+
+/* First Card */
+.row .col-lg-4:nth-child(1) .program-card:hover .image-title {
+    color: #FF671F;
+    transition: color 0.3s ease;
+}
+
+/* Second Card */
+.row .col-lg-4:nth-child(2) .program-card:hover .image-title {
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+/* Third Card */
+.row .col-lg-4:nth-child(3) .program-card:hover .image-title {
+    color: #4CBB17;
+    transition: color 0.3s ease;
+}
+
+/* Keep the original know-more hover effect */
+.know-more:hover {
+    color: #FFA322;
+}
+
+@media (max-width: 768px) {
+    .image-title {
+        font-size: 2rem;
+        bottom: 30px;
+        left: 20px;
+    }
+
+    .section-title {
+        font-size: 2.8rem;
+    }
+}
+
+.sdg-title {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: white;
+    margin-bottom: 2rem;
+    font-family: 'Bebas Neue', sans-serif;
+}
+.sdg-title .subtitle {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+.sdg-title .main-title {
+    font-size: 3.5rem;
+    line-height: 1;
+}
+.sdg-container {
+    background: rgba(255, 178, 0, 0.25);
+    box-shadow: inset 0px -4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 2rem 0;
+}
+.sdg-card {
+    aspect-ratio: 1;
+    margin-bottom: 1rem;
+    width: 40vw; /* Fluid width based on viewport */
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.sdg-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.sdg-row {
+    justify-content: center;
+}
+
+@media (max-width: 576px) {
+    .sdg-card {
+        width: 35vw; /* Smaller percentage on mobile */
+        max-width: 130px;
+    }
+    
+    .sdg-container .row {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .sdg-container .row>div {
+        width: 45%;
+        margin: 0.5rem auto;
+    }
+
+    .sdg-title .subtitle {
+        font-size: 1.5rem;
+    }
+    
+    .sdg-title .main-title {
+        font-size: 2rem;
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 320px) {
+    .sdg-card {
+        width: 30vw; /* Even smaller for very small devices */
+    }
+    
+    .sdg-title .subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .sdg-title .main-title {
+        font-size: 1.7rem;
+    }
+}
+.white-space {
+    height: 120px;
+    background-color: #ffffff;
+}

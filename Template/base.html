@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Karma:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/your-font-awesome-kit.js"></script>
     {% block head %}{% endblock head %}
 
 </head>
@@ -35,7 +36,7 @@
                             <a class="nav-link" href="{% url 'aboutus' %}">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Our Work</a>
+                            <a class="nav-link" href="{% url 'ourwork' %}">Our Work</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Get Involved</a>
@@ -69,7 +70,7 @@
                 <div class="footer-divider"></div>
                 <div class="footer-links">
                     <a href="{% url 'aboutus' %}">About Us</a>
-                    <a href="#programs">Programs</a>
+                    <a href="{% url 'ourwork' %}">Our Work</a>
                     <a href="#involved">Get Involved</a>
                     <a href="#contact">Contact Us</a>
                     <a href="#resources">Resources</a>

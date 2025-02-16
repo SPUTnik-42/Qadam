@@ -1,0 +1,103 @@
+{% extends "base.html" %}
+{% load static %}
+{% block head %}
+    <link rel="stylesheet" href={% static 'OurWork.css' %}>
+{% endblock head %}
+{% block main %}
+        <!-- Images Section -->
+        <div class="images-section">
+            <div class="images-container">
+                <div class="images-item">
+                    <div class="images-overlay"></div>
+                    <img src={% static './Images/OurWork_Image1.svg' %} alt="Educate">
+                    <div class="images-text">EDUCATE</div>
+                </div>
+                <div class="images-item">
+                    <div class="images-overlay"></div>
+                    <img src={% static './Images/OurWork_Image2.svg' %} alt="Collect">
+                    <div class="images-text">COLLECT</div>
+                </div>
+                <div class="images-item">
+                    <div class="images-overlay"></div>
+                    <img src={% static './Images/OurWork_Image3.svg' %} alt="Donate">
+                    <div class="images-text">DONATE</div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="content-container">
+            <div class="intro-section">
+                <h1 class="main-title">WHY FOOTWEAR?</h1>
+                <p class="intro-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel nunc et metus tempus pretium ut ac erat. Phasellus finibus maximus quam. Donec pellentesque egestas leo in convallis. Donec id metus est. Nullam lobortis arcu sed tincidunt pulvinar. Fusce a sapien sapien. Praesent ut dignissim sapien. Aliquam condimentum purus non vestibulum bibendum. Praesent nec facilisis urna, sit amet ornare massa. Cras lacinia enim orci, quis convallis felis mattis pulvinar. Pellentesque fringilla quis ligula eget molestie.
+                </p>
+            </div>
+
+            <div class="row">
+                <!-- Awareness Section -->
+                <div class="col-12 col-md-4">
+                    <div class="section-content">
+                        <div class="info-box">
+                            <h2 class="box-title">AWARENESS AND <br>EDUCATION</h2>
+                        </div>
+                        <p class="quote">"Transforming Understanding, One Step at a Time"</p>
+
+                        <div class="section-heading">WHY WEAR FOOTWEAR?</div>
+                        <p class="section-text">Footwear is not just a luxury; it is essential for protecting feet from injuries, infections, and harsh weather conditions.</p>
+
+                        <div class="section-heading">THE HEALTH RISKS WITHOUT FOOTWEAR</div>
+                        <p class="section-text">Bare feet can lead to serious health issues, including cuts, sores, infections, and parasitic diseases like hookworm.</p>
+
+                        <div class="section-heading">YOUR ROLE IN AWARENESS</div>
+                        <p class="section-text">Help spread the word about the importance of footwear through campaigns, social media, and word of mouth. Together, we can bridge the knowledge gap.</p>
+
+                        <div class="vertical-divider"></div>
+                    </div>
+                    <div class="horizontal-divider"></div>
+                </div>
+
+                <!-- Collection Section -->
+                <div class="col-12 col-md-4">
+                    <div class="section-content">
+                        <div class="info-box collection">
+                            <h2 class="box-title">COLLECTION</h2>
+                        </div>
+                        <p class="quote">"From Your Closet to a New Beginning"</p>
+
+                        <div class="section-heading">HOW YOU CAN CONTRIBUTE</div>
+                        <p class="section-text">Donate lightly used or new footwear that you no longer need. Every pair can make a difference.</p>
+
+                        <div class="section-heading">OUR PROCESS</div>
+                        <p class="section-text">Footwear is collected, cleaned, and categorized to ensure quality and suitability before being distributed.</p>
+
+                        <div class="section-heading">COLLECTION DRIVES</div>
+                        <p class="section-text">Participate in or organize collection drives in your community, schools, or workplaces to maximize impact.</p>
+
+                        <div class="vertical-divider"></div>
+                    </div>
+                    <div class="horizontal-divider"></div>
+                </div>
+
+                <!-- Donation Section -->
+                <div class="col-12 col-md-4">
+                    <div class="section-content">
+                        <div class="info-box donation">
+                            <h2 class="box-title">DONATION</h2>
+                        </div>
+                        <p class="quote">"Delivering Dignity and Health"</p>
+
+                        <div class="section-heading">HOW YOUR DONATIONS ARE USED</div>
+                        <p class="section-text">Every pair of shoes is a step towards a healthier and safer life for someone in need.</p>
+
+                        <div class="section-heading">TRANSPARENCY AND IMPACT</div>
+                        <p class="section-text">See the direct impact of your contributions through our beneficiary stories and reports.</p>
+
+                        <div class="section-heading">YOUR ROLE IN AWARENESS</div>
+                        <p class="section-text">Drop off your footwear at designated centers, mail them to us, or contribute monetarily to support logistics and operations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="white-space"></div>
+{% endblock main %} 

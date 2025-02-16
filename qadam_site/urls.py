@@ -24,6 +24,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',HomeView, name='home'),
     path('aboutus/',AboutView, name='aboutus'),
+    path('ourwork/',WorkView, name='ourwork'),
 ] 
 if settings.DEBUG:
     urlpatterns+= static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
