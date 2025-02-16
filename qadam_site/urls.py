@@ -25,6 +25,8 @@ urlpatterns = [
     path('',HomeView, name='home'),
     path('aboutus/',AboutView, name='aboutus'),
     path('ourwork/',WorkView, name='ourwork'),
+    path('donate/', payment_view, name='payment'),
+    path('donate/success/', payment_success_view, name='payment_success'),
 ] 
 if settings.DEBUG:
     urlpatterns+= static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

@@ -7,7 +7,7 @@
 
     <div class="hero-section">
         <img src={% static './Images/UpperImage.svg' %} alt="Children looking at camera" class="hero-image">
-        <div class="gradient-overlay">
+        <div class="gradient-overlay" >
             <div class="content">
                 <h1>TOWARDS PAINLESS<br>STEPS</h1>
                 <p>At Qadam, we believe every child deserves the chance to walk confidently toward a brighter future. We provide children in need with proper footwear, an essential yet often overlooked necessity that impacts their health, education, and well-being. Lack of shoes can lead to injuries, infections, and long-term health issues, making everyday activities like walking to school or playing difficult. By offering quality shoes, we help protect their feet and give them the dignity and confidence they deserve.</p>
@@ -41,7 +41,7 @@
                     </div>
                     <div class="card-content">
                         <p class="card-text">Our collection drives are at the heart of this mission, bringing neighbourhoods, societies, and apartment complexes together to make a tangible difference in the lives of children in need. By setting up donation bins and hosting weekend events, we make it easy for individuals to contribute.</p>
-                        <a href="OurWork.php#collection-know_more" class="know-more">Know More</a>
+                        <a href="{% url 'ourwork' %} class="know-more">Know More</a>
                     </div>
                 </div>
             </div>
@@ -55,7 +55,7 @@
                     </div>
                     <div class="card-content">
                         <p class="card-text">We're determined to ensure that each donation reaches the children who need it the most, through organized distribution events and partnership with schools, shelters and community organizations. Together, we're not just donating shoes, we're giving children the tools to walk confidently toward a better future.</p>
-                        <a href="OurWork.php#donation-know_more" class="know-more">Know More</a>
+                        <a href="{% url 'ourwork' %} class="know-more">Know More</a>
                     </div>
                 </div>
             </div>
