@@ -38,14 +38,14 @@ html {
 
 h1 {
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 4rem;
+    font-size: 1.9rem;
     line-height: 1;
     margin-bottom: 1.5rem;
 }
 
 p {
     font-family: 'Karma', serif;
-    font-size: 1.1rem;
+    font-size: 0.7rem;
     line-height: 1.6;
 }
 
@@ -55,13 +55,13 @@ p {
         padding: 1.5rem;
     }
 
-    h1 {
+    /*h1 {
         font-size: 3rem;
     }
 
     p {
         font-size: 1rem;
-    }
+    }*/
 }
 
 @media (max-width: 576px) {
